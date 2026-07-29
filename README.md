@@ -1,2 +1,1 @@
-# ngoa-long-s6-wiki
-Wiki tra cứu tướng và kỹ năng Ngọa Long Cảm Xúc S6
+Ngọa Long Cảm Xúc S6 Wiki – Phiên bản 2.0, Đợt 3. Bổ sung khu vực liên hệ chính thức và cơ sở dữ liệu 44 binh chủng có tìm kiếm, lọc và xem chi tiết.
