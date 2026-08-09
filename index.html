@@ -139,6 +139,39 @@ details.lesson-accordion{display:block;padding:0;overflow:hidden}
 @media(prefers-reduced-motion:reduce){.lesson-body,.step-body{animation:none}.lesson-chevron,.step-chevron{transition:none}}
 
 .skill-demo{margin-top:10px;padding:10px;border-radius:12px;background:rgba(255,255,255,.06);text-align:center}.skill-demo-title{font-weight:700;margin-bottom:8px}.skill-demo img{display:block;width:min(100%,420px);height:auto;margin:0 auto;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.28)}
+
+
+/* ===== GIF hover zoom - CSS only ===== */
+.hero img[src^="Gif/"]{
+  cursor:zoom-in;
+  position:relative;
+  z-index:20;
+  transition:transform .18s ease, box-shadow .18s ease;
+  transform-origin:left center;
+}
+.hero img[src^="Gif/"]:hover{
+  transform:translate(10px,0) scale(4);
+  z-index:999999 !important;
+  box-shadow:0 8px 30px rgba(0,0,0,.75);
+  border-radius:4px;
+}
+/* Cho phép GIF phóng ra ngoài khung tướng */
+.hero, .hero > *, .card, .panel, .content, main{
+  overflow:visible !important;
+}
+
+
+/* Giữ GIF phóng lớn không bị cắt ở mép trái/bảng */
+.hero,
+.hero > div,
+.hero .avatar,
+.hero .avatar-wrap,
+.hero .hero-avatar,
+.hero .portrait,
+.hero .portrait-wrap {
+  overflow: visible !important;
+}
+
 </style><style>
 /* ===== ĐỢT 3: LIÊN HỆ + BINH CHỦNG ===== */
 .contact-banner{max-width:1180px;margin:18px auto 0;padding:16px 18px;border:1px solid rgba(255,181,71,.55);border-radius:18px;background:linear-gradient(135deg,rgba(78,40,12,.96),rgba(25,20,19,.96));box-shadow:0 14px 34px rgba(0,0,0,.24);color:#fff;display:flex;gap:18px;align-items:center;justify-content:space-between}
@@ -1729,5 +1762,7 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 })();
 </script>
+
+
 
 </body></html>
