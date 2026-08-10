@@ -1186,7 +1186,7 @@ function render(){
     host.appendChild(sec);
   };
   appendNapTier(napPacks.filter(x=>superNames.has(x.base.name)),'👑 SUPER VIP • Mốc nạp 2.000.000','supervip-tier');
-  appendNapTier(napPacks.filter(x=>vipNames.has(x.base.name)),'⭐ VIP • Mốc nạp 1.000.000','vip-tier');
+  appendNapTier(napPacks.filter(x=>vipNames.has(x.base.name)),'⭐ VIP • Có khả năng mở khóa với tỷ lệ: 10% • 20% • 30% • 40% • 50% • 100%','vip-tier');
   // Nếu sau này có thêm tướng nạp khác, không làm mất: tự động giữ lại trong nhóm riêng.
   appendNapTier(napPacks.filter(x=>!superNames.has(x.base.name)&&!vipNames.has(x.base.name)),'💎 Tướng Nạp Khác','vip-tier');
 
